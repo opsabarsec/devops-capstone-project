@@ -91,7 +91,7 @@ class Account(db.Model, PersistentBase):
     name = db.Column(db.String(64))
     email = db.Column(db.String(64))
     address = db.Column(db.String(256))
-    phone_number = db.Column(db.String(32), nullable=True)  
+    phone_number = db.Column(db.String(32), nullable=True) 
     # phone number is optional
     date_joined = db.Column(db.Date(), nullable=False, default=date.today())
 
@@ -127,7 +127,7 @@ class Account(db.Model, PersistentBase):
             else:
                 self.date_joined = date.today()
         except KeyError as error:
-            raise DataValidationError("Invalid Account: missing " 
+            raise DataValidationError("Invalid Account: missing "
                                       + error.args[0]) from error
         except TypeError as error:
             raise DataValidationError(
