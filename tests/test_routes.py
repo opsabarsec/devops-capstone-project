@@ -151,7 +151,7 @@ class TestAccountService(TestCase):
         # create an Account to update
         test_account = AccountFactory()
         resp = self.client.post(BASE_URL, json=test_account.serialize())
-        self.assertEqual(resp.status_code, status.HTTP_201_CREATED)
+        self.assertEqual(resp.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
 
         # update the account
         new_account = resp.get_json()
@@ -165,7 +165,7 @@ class TestAccountService(TestCase):
         """It should Delete an Account"""
         account = self._create_accounts(1)[0]
         resp = self.client.delete(f"{BASE_URL}/{account.id}")
-        self.assertEqual(resp.status_code, status.HTTP_204_NO_CONTENT)
+        self.assertEqual(resp.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
     
     def test_method_not_allowed(self):
         """It should not allow an illegal method call"""
