@@ -13,7 +13,7 @@ This capstone project brings it all together. From coding and testing to buildin
 
 As for the other exercises in the previous certification modules, all has been completed using VSCode running on a virtual machine. 
 
-Tasks were designed for 3 springs using a KANBAN board that is shared through
+Tasks were designed (course week 1) for 3 springs using a KANBAN board that is shared through
 
 [ZenHub](https://www.zenhub.com/)
 
@@ -38,15 +38,15 @@ The code for the microservice is contained in the `service` package. All of the 
 ## TASKS
 
 Sprint 1: develop a RESTful microservice using good test driven development techniques
-Implementation of REST API's for `READ`, `UPDATE`, `DELETE`, and `LIST` while maintaining **95%** code coverage. In true **Test Driven Development** fashion, during the project first you write tests for the code you "wish you had" in test_routes.py, and then the code to make them pass in routes.py .
+Implementation of REST API's for `READ`, `UPDATE`, `DELETE`, and `LIST` while maintaining **95%** code coverage. In true **Test Driven Development** fashion, during the project first you write tests for the code you "wish you had" in test_routes.py, and then the code to make them pass in routes.py . (week 2)
 
 Sprint 2: 
 - add continuous integration to the repository in the form of GitHub Actions so that every pull request you make will be fully tested, and code coverage will be measured to ensure that the code maintains high quality. 
-- add good security practices to your code to minimize the risk of vulnerabilities and to make sure that those shiny new GitHub Actions are working properly.
+- add good security practices to your code to minimize the risk of vulnerabilities and to make sure that those shiny new GitHub Actions are working properly. (week 3)
 
 Sprint 3: 
-- build a Docker image and deploy your microservice to Kubernetes manually, creating YAML manifests
-- develop a continuous delivery pipeline using Tekton, which builds a container image and deploys it to OpenShift using your YAML manifests. 
+- build a Docker image and deploy your microservice to Kubernetes manually, creating YAML manifests (week 4)
+- develop a continuous delivery pipeline using Tekton, which builds a container image and deploys it to OpenShift using your YAML manifests. (week 5)
 
 
 
