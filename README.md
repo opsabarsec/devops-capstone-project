@@ -37,7 +37,7 @@ The code for the microservice is contained in the `service` package. All of the 
 
 ## TASKS
 
-Sprint 1: develop a RESTful microservice using good test driven development techniques
+Sprint 1: develop a RESTful microservice using good test driven development practices.
 Implementation of REST API's for `READ`, `UPDATE`, `DELETE`, and `LIST` while maintaining **95%** code coverage. In true **Test Driven Development** fashion, during the project first you write tests for the code you "wish you had" in test_routes.py, and then the code to make them pass in routes.py . (week 2)
 
 Sprint 2: 
